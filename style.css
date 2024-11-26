@@ -49,7 +49,7 @@ body {
     position: relative;
     color: white;
     justify-content: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .overview {
@@ -92,7 +92,7 @@ body {
 
 .overview_title {
     display: flex;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -467,32 +467,32 @@ span.points {
 /* Buttons */
 .carousel-buttons {
     display: flex;
-    justify-content: center; /* Center buttons below the slider */
+    justify-content: center;
+    /* Center buttons below the slider */
     align-items: center;
-    margin-top: 5px; /* Add spacing between the images and buttons */
-    gap: 15px; /* Space between buttons */
+    margin-top: 2px;
+    /* Add spacing between the images and buttons */
+    gap: 8px;
+    /* Space between buttons */
 }
 
-.carousel-button {
-    background-color: rgba(0, 0, 0, 0.5);
+.prev-button,
+.next-button {
+    background-color: #2a2a2a;
     color: white;
     border: solid 2px white;
-    border-radius: 40px;
-    font-size: 1.5rem;
-    padding: 10px 20px;
+    font-size: 1rem;
+    padding: 2px 4px;
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
 .carousel-button:hover {
-    background: #2a2a2a; /* Slightly lighter background on hover */
+    color: black;
+    background-color: #f4f0ec
+        /* Slightly lighter background on hover */
 }
-
-
-
-
-
 
 @media (min-width: 600px) {
 
@@ -563,6 +563,34 @@ span.points {
     font-size: 20px;
 }
 
+.carousel {
+    width: 100%;
+    height: 600px;
+}
+
+
+.carousel-slide {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+}
+
+.carousel-slide img {
+    width: 55%;
+    height: 60%;
+    object-fit: bottom;
+}
+
+/* Buttons */
+.carousel-buttons {
+    margin-top: 8px;
+}
+
+.prev-button,
+.next-button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -636,5 +664,34 @@ span.points {
         padding: 8px 12px;
 
 
+    }
+    .carousel {
+        width: 100%;
+        height: 600px;
+    }
+
+
+    .carousel-slide {
+        position: absolute;
+        width: 45%;
+        height: 800px;
+    }
+
+    .carousel-slide img {
+        width: 55%;
+        height: 60%;
+        object-fit: bottom;
+    }
+
+    /* Buttons */
+    .carousel-buttons {
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .prev-button,
+    .next-button {
+        font-size: 1.5rem;
+        padding: 10px 10px;
     }
 }
