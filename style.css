@@ -236,11 +236,11 @@ a:hover {
 .page3_container {
     display: flex;
     align-content: center;
-    width: 100%;
 
 }
 
-.page3_container {
+.page3_container,
+.overall_article {
     flex-direction: column;
 }
 
