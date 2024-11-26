@@ -266,8 +266,7 @@ a:hover {
 .text-section,
 .text-section2,
 .page3_text,
-.page4_text,
-.page5_text {
+.page4_text {
     flex: 100%;
     color: white;
     padding: 20px;
@@ -276,6 +275,14 @@ a:hover {
     text-align: justify;
 }
 
+.page5_text {
+    flex: 80%;
+    color: white;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    text-align: justify;
+}
 
 .Hiyori,
 .Ayanokouji,
@@ -381,6 +388,7 @@ span.points {
     float: right;
 
 }
+
 .gallery-container {
     width: 100%;
     display: flex;
@@ -393,9 +401,11 @@ span.points {
 .carousel {
     position: relative;
     width: 100%;
-     /* Adjust slider width to fit taller images */
-    height: 700px; /* Adjust height to accommodate taller images */
-    perspective: 1000px; /* 3D perspective */
+    /* Adjust slider width to fit taller images */
+    height: 700px;
+    /* Adjust height to accommodate taller images */
+    perspective: 1000px;
+    /* 3D perspective */
     overflow: hidden;
     margin: 0;
     padding-bottom: 2px;
@@ -412,28 +422,35 @@ span.points {
 
 .carousel-slide {
     position: absolute;
-    width: 500px; /* Fixed width to maintain proportionality with tall images */
-    height: 100%; /* Ensure the image fills most of the container height */
+    width: 500px;
+    /* Fixed width to maintain proportionality with tall images */
+    height: 100%;
+    /* Ensure the image fills most of the container height */
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
+    /* Hidden by default */
     transform-origin: center center;
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
     z-index: 1;
 }
 
 .carousel-slide img {
-    width: 55%; /* Allow width to scale naturally */
-    height: 60%; /* Ensure the image fills the container height */
-    object-fit: bottom; /* Preserve aspect ratio for taller images */
+    width: 55%;
+    /* Allow width to scale naturally */
+    height: 60%;
+    /* Ensure the image fills the container height */
+    object-fit: bottom;
+    /* Preserve aspect ratio for taller images */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Active slide */
 .carousel-slide.active {
-    transform: translateZ(200px); /* Bring to front */
+    transform: translateZ(200px);
+    /* Bring to front */
     z-index: 3;
     opacity: 1;
 }
@@ -492,6 +509,17 @@ span.points {
     color: black;
     background-color: #f4f0ec
         /* Slightly lighter background on hover */
+}
+
+/* Gallery*/
+
+.gallery_title {
+    display: flex;
+    position: relative;
+    color: white;
+    justify-content: center;
+    padding-bottom: 0;
+    font-size: 2.5em;
 }
 
 @media (min-width: 600px) {
@@ -665,6 +693,7 @@ span.points {
 
 
     }
+
     .carousel {
         width: 100%;
         height: 600px;
