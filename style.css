@@ -320,22 +320,6 @@ img {
     border: 2px white solid;
 }
 
-table {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.űrlap {
-    display: flex;
-    color: white;
-    text-align: center;
-}
-
-td {
-    border: 2px white solid;
-}
-
 /*Third Page*/
 
 .page3_h1 {
@@ -522,7 +506,7 @@ span.points {
         display: flex;
         font-size: 3em;
     }
-    .overview_title{font-size: 2.5em;}}
+    .overview_title{font-size: 2;}}
 
     .overall_article1,
     .overall_article2,
