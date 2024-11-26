@@ -239,8 +239,7 @@ a:hover {
 
 }
 
-.page3_container,
-.overall_article {
+.page3_container {
     flex-direction: column;
 }
 
