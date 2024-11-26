@@ -49,7 +49,7 @@ body {
     position: relative;
     color: white;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .overview {
@@ -92,7 +92,7 @@ body {
 
 .overview_title {
     display: flex;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -144,10 +144,10 @@ a:hover {
 }
 
 .menu_2a {
-    font-size: 8px;
+    font-size: 10px;
     padding: 1%;
     display: flex;
-    width: 12%;
+    width: 10%;
     border-radius: 50px;
 }
 
@@ -236,7 +236,6 @@ a:hover {
 .page3_container {
     display: flex;
     align-content: center;
-
 }
 
 .page3_container {
@@ -278,8 +277,6 @@ a:hover {
 }
 
 
-
-
 .Hiyori,
 .Ayanokouji,
 .page3_pic1,
@@ -317,6 +314,22 @@ img {
     margin-right: auto;
     display: block;
     margin-bottom: 30px;
+    border: 2px white solid;
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.űrlap {
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+td {
     border: 2px white solid;
 }
 
@@ -368,8 +381,6 @@ span.points {
     float: right;
 
 }
-
-
 .gallery-container {
     width: 100%;
     display: flex;
@@ -382,11 +393,9 @@ span.points {
 .carousel {
     position: relative;
     width: 100%;
-    /* Adjust slider width to fit taller images */
-    height: 400px;
-    /* Adjust height to accommodate taller images */
-    perspective: 1000px;
-    /* 3D perspective */
+     /* Adjust slider width to fit taller images */
+    height: 700px; /* Adjust height to accommodate taller images */
+    perspective: 1000px; /* 3D perspective */
     overflow: hidden;
     margin: 0;
     padding-bottom: 2px;
@@ -403,35 +412,28 @@ span.points {
 
 .carousel-slide {
     position: absolute;
-    width: 100%;
-    /* Fixed width to maintain proportionality with tall images */
-    height: 70%;
-    /* Ensure the image fills most of the container height */
+    width: 500px; /* Fixed width to maintain proportionality with tall images */
+    height: 100%; /* Ensure the image fills most of the container height */
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    /* Hidden by default */
+    opacity: 0; /* Hidden by default */
     transform-origin: center center;
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
     z-index: 1;
 }
 
 .carousel-slide img {
-    width: 100%;
-    /* Allow width to scale naturally */
-    height: auto;
-    /* Ensure the image fills the container height */
-    object-fit: contain;
-    /* Preserve aspect ratio for taller images */
+    width: 55%; /* Allow width to scale naturally */
+    height: 60%; /* Ensure the image fills the container height */
+    object-fit: bottom; /* Preserve aspect ratio for taller images */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Active slide */
 .carousel-slide.active {
-    transform: translateZ(200px);
-    /* Bring to front */
+    transform: translateZ(200px); /* Bring to front */
     z-index: 3;
     opacity: 1;
 }
@@ -465,32 +467,30 @@ span.points {
 /* Buttons */
 .carousel-buttons {
     display: flex;
-    justify-content: center;
-    /* Center buttons below the slider */
+    justify-content: center; /* Center buttons below the slider */
     align-items: center;
-    margin-top: 2px;
-    /* Add spacing between the images and buttons */
-    gap: 8px;
-    /* Space between buttons */
+    margin-top: 5px; /* Add spacing between the images and buttons */
+    gap: 15px; /* Space between buttons */
 }
 
-.prev-button,
-.next-button {
-    background-color: #2a2a2a;
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: solid 2px white;
-    font-size: 1rem;
-    padding: 2px 4px;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
 .carousel-button:hover {
-    color: black;
-    background-color: #f4f0ec
-        /* Slightly lighter background on hover */
+    background: #2a2a2a; /* Slightly lighter background on hover */
 }
+
+
+
 
 
 
@@ -506,7 +506,6 @@ span.points {
         display: flex;
         font-size: 3em;
     }
-    .overview_title{font-size: 2;}}
 
     .overall_article1,
     .overall_article2,
@@ -514,7 +513,6 @@ span.points {
         display: flex;
         align-items: stretch;
         width: 100%;
-        max-width: auto;
         flex-direction: row;
         gap: 10px;
     }
@@ -565,35 +563,6 @@ span.points {
     font-size: 20px;
 }
 
-.carousel {
-    width: 100%;
-    height: 600px;
-}
-
-
-.carousel-slide {
-    position: absolute;
-    width: 500px;
-    height: 100%;
-}
-
-.carousel-slide img {
-    width: 55%;
-    height: 60%;
-    object-fit: bottom;
-}
-
-/* Buttons */
-.carousel-buttons {
-    margin-top: 8px;
-}
-
-.prev-button,
-.next-button {
-    font-size: 1.5rem;
-    padding: 10px 20px;
-}
-
 
 @media only screen and (min-width: 768px) {
 
@@ -613,7 +582,6 @@ span.points {
     .page3_individual-boxes {
         display: flex;
         align-items: stretch;
-        max-width: 1400px;
         flex-direction: row;
         width: 100%;
     }
@@ -669,35 +637,4 @@ span.points {
 
 
     }
-
-    .carousel {
-        width: 100%;
-        height: 600px;
-    }
-
-
-    .carousel-slide {
-        position: absolute;
-        width: 100%;
-        height: 800px;
-    }
-
-    .carousel-slide img {
-        width: 55%;
-        height: 60%;
-        object-fit: bottom;
-    }
-
-    /* Buttons */
-    .carousel-buttons {
-        margin-top: 15px;
-        gap: 15px;
-    }
-
-    .prev-button,
-    .next-button {
-        font-size: 1.5rem;
-        padding: 10px 10px;
-    }
-
 }
