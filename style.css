@@ -276,13 +276,21 @@ a:hover {
 }
 
 .page5_text {
-    flex: 80%;
     color: white;
     padding: 20px;
+    margin: 0 auto;
     background-color: #2a2a2a;
     border-radius: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: justify;
+    background-color: #2a2a2a;
+    color: white;
 }
+
+
 
 .Hiyori,
 .Ayanokouji,
@@ -291,9 +299,10 @@ a:hover {
 .page5_pic {
     display: flex;
     width: 100%;
-    margin-top: 20px;
     justify-content: center;
 }
+
+
 
 .Hiyori,
 .Ayanokouji,
@@ -511,16 +520,6 @@ span.points {
         /* Slightly lighter background on hover */
 }
 
-/* Gallery*/
-
-.gallery_title {
-    display: flex;
-    position: relative;
-    color: white;
-    justify-content: center;
-    padding-bottom: 0;
-    font-size: 1.5em;
-}
 
 @media (min-width: 600px) {
 
@@ -620,9 +619,7 @@ span.points {
     padding: 10px 20px;
 }
 
-.gallery_title {
-    font-size: 2.5em;
-}
+
 
 @media only screen and (min-width: 768px) {
 
@@ -728,7 +725,4 @@ span.points {
         padding: 10px 10px;
     }
 
-    .gallery_title {
-        font-size: 2.5em;
-    }
 }
