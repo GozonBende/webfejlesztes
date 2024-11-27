@@ -519,7 +519,7 @@ span.points {
     color: white;
     justify-content: center;
     padding-bottom: 0;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 @media (min-width: 600px) {
@@ -618,6 +618,10 @@ span.points {
 .next-button {
     font-size: 1.5rem;
     padding: 10px 20px;
+}
+
+.gallery_title {
+    font-size: 2.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -722,5 +726,9 @@ span.points {
     .next-button {
         font-size: 1.5rem;
         padding: 10px 10px;
+    }
+
+    .gallery_title {
+        font-size: 2.5em;
     }
 }
