@@ -403,7 +403,7 @@ span.points {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 15px 0;
     height: auto;
 }
 
@@ -425,6 +425,7 @@ span.points {
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-bottom: 511px;
     transition: transform 0.8s ease-in-out;
     transform-style: preserve-3d;
 }
@@ -496,7 +497,7 @@ span.points {
     justify-content: center;
     /* Center buttons below the slider */
     align-items: center;
-    margin-top: 2px;
+    margin-top: 5px;
     /* Add spacing between the images and buttons */
     gap: 8px;
     /* Space between buttons */
