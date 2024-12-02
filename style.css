@@ -20,7 +20,7 @@ body {
 /*first page*/
 .header {
     position: relative;
-    width: 100%;
+    flex-basis: 100%;
     height: 50%;
     text-align: center;
     display: flex;
@@ -69,7 +69,6 @@ body {
     font-size: 1em;
     flex-wrap: wrap;
     height: auto;
-    width: 90%;
     margin: 20px auto;
     border: 2px white solid;
     border-radius: 10px;
@@ -119,7 +118,7 @@ body {
 .menu_1a {
     display: flex;
     padding: 2%;
-    width: 30%;
+    flex-basis: 30%;
 }
 
 a:hover {
@@ -147,7 +146,7 @@ a:hover {
     font-size: 10px;
     padding: 1%;
     display: flex;
-    width: 10%;
+    flex-basis: 10%;
     border-radius: 50px;
 }
 
@@ -159,7 +158,7 @@ a:hover {
 }
 
 .container {
-    width: 100%;
+    flex-basis: 100%;
     height: 100%;
     background: black;
     display: flex;
@@ -316,9 +315,110 @@ img {
 
 }
 
+
 .page3_pic1,
 .Ayanokouji {
     order: 1;
+}
+
+
+.form1,
+.form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-basis: 90%;
+    /* Reszponzív szélesség */
+    max-width: 800px;
+    /* Maximális szélesség */
+    padding: 20px;
+    color: white;
+    border: 2px white solid;
+    border-radius: 10px;
+    box-shadow: 3px 2px 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* Háttérszín */
+}
+
+.form1 {
+    background-image: url('images/form1.jpg');
+}
+
+.form2 {
+    background-image: url('images/form2.png');
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    /* Táblázatok teljes szélesség */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    /* Alapértelmezett egymás alatti opciók */
+}
+
+.option2 {
+    text-align: center;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* Gombok középre igazítása */
+    gap: 20px;
+    /* Távolság a gombok között */
+}
+
+.button-container button {
+    width: auto;
+    /* A gomb szélessége igazodik a tartalomhoz */
+    padding: 10px 20px;
+    /* Kényelmes méretű gomb */
+    font-size: 16px;
+    /* Szöveg mérete */
+    border-radius: 5px;
+    /* Lekerekített sarkok */
+    border: none;
+    /* Szegély eltávolítása */
+    cursor: pointer;
+    /* Mutató megjelenítése */
+    background-color: black;
+    /* Gomb színe */
+    color: white;
+    /* Szöveg színe */
+    transition: background-color 0.3s ease;
+    border: 2px white solid;
+    box-shadow: 3px 2px 6px;
+    border-radius: 20px;
+}
+
+.button-container button:hover {
+    color: black;
+    background-color: #f4f0ec;
+    /* Hover állapot színe */
 }
 
 
@@ -333,21 +433,7 @@ img {
     border: 2px white solid;
 }
 
-table {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.űrlap {
-    display: flex;
-    color: white;
-    text-align: center;
-}
-
-td {
-    border: 2px white solid;
-}
 
 /*Third Page*/
 
@@ -451,7 +537,7 @@ span.points {
     /* Allow width to scale naturally */
     height: 60%;
     /* Ensure the image fills the container height */
-    object-fit: bottom;
+    object-fit: cover;
     /* Preserve aspect ratio for taller images */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -571,55 +657,75 @@ span.points {
     .Ayanokouji {
         order: 1;
     }
+
+    .form1,
+    .form2 {
+        flex-basis: 100%;
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td,
+    th {
+        padding: 8px;
+    }
+
+    .option {
+        flex-direction: column;
+        gap: 10px;
+        /* Opciók közötti távolság */
+    }
+
+    .page5_img1 {
+        width: 50%;
+    }
+
+    .page5_h2_1 {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .page5_h2_2 {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    span.points {
+        font-size: 20px;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 600px;
+    }
+
+
+    .carousel-slide {
+        position: absolute;
+        width: 500px;
+        height: 100%;
+    }
+
+    .carousel-slide img {
+        width: 55%;
+        height: 60%;
+        object-fit: cover;
+    }
+
+    /* Buttons */
+    .carousel-buttons {
+        margin-top: 8px;
+    }
+
+    .prev-button,
+    .next-button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
 }
-
-.page5_img1 {
-    width: 50%;
-}
-
-.page5_h2_1 {
-    font-size: 20px;
-    padding-top: 15px;
-}
-
-.page5_h2_2 {
-    font-size: 10px;
-    padding-top: 10px;
-}
-
-span.points {
-    font-size: 20px;
-}
-
-.carousel {
-    width: 100%;
-    height: 600px;
-}
-
-
-.carousel-slide {
-    position: absolute;
-    width: 500px;
-    height: 100%;
-}
-
-.carousel-slide img {
-    width: 55%;
-    height: 60%;
-    object-fit: bottom;
-}
-
-/* Buttons */
-.carousel-buttons {
-    margin-top: 8px;
-}
-
-.prev-button,
-.next-button {
-    font-size: 1.5rem;
-    padding: 10px 20px;
-}
-
 
 
 @media only screen and (min-width: 768px) {
@@ -627,7 +733,7 @@ span.points {
     .basics,
     .story {
         display: flex;
-        width: 45%
+        flex-basis: 45%;
     }
 
     .title {
@@ -641,7 +747,7 @@ span.points {
         display: flex;
         align-items: stretch;
         flex-direction: row;
-        width: 100%;
+        flex-basis: 100%;
     }
 
 
@@ -668,6 +774,20 @@ span.points {
     .page3_pic2,
     .Ayanokouji {
         order: 1;
+    }
+
+    .form1,
+    .form2 {
+        flex-direction: row;
+        max-width: 1200px;
+        /* Nagyobb kijelzőkön szélesebb táblázatok */
+    }
+
+    .option {
+        display: flex;
+        flex-direction: row;
+        /* Alapértelmezett egymás alatti opciók */
+        justify-content: space-between;
     }
 
 
@@ -711,7 +831,7 @@ span.points {
     .carousel-slide img {
         width: 55%;
         height: 60%;
-        object-fit: bottom;
+        object-fit: cover;
     }
 
     /* Buttons */
