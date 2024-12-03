@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gózon Bendegúz">
+    <meta name="copyright" content="Oktatási célokra">
+	<meta name="description" content="Classroom of the Elite Light Novel series">
     <title>Classroom of the Elite</title>
-
-    <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/Icon.jpg" type="image/x-icon">
@@ -15,17 +16,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <!-- Inline Style for Slick -->
+
     <style>
         .slider {
+            display: flex;
             width: 90%;
-            /* Increased width */
+
             margin: 50px auto;
             margin-top: 20px;
         }
 
         .slick-slide {
             margin: 0px 5px;
+            justify-content: flex-end;
         }
 
         .slick-slide img {
@@ -33,33 +36,32 @@
             height: 300px;
             object-fit: cover;
 
+
         }
 
         .slick-prev:before,
         .slick-next:before {
             color: white;
-            /* Keep navigation arrows white */
+
         }
 
-        /* Styling for dots */
         .slick-dots li {
             position: relative;
         }
 
         .slick-dots li button:before {
             color: white;
-            /* White color for unselected dots */
+
             font-size: 16px;
         }
 
         .slick-dots li.slick-active button:before {
             color: rgb(75, 3, 3);
-            /* Change color of the active dot */
+
         }
 
         .slick-dots {
             bottom: -20px;
-            /* Adjust dot position */
         }
 
         .gallery_title {
@@ -82,14 +84,15 @@
 
         @media (min-width: 600px) {
             .slider {
-                width: 70%;
+                width: 80%;
             }
 
             .slick-slide img {
                 width: 100%;
-                height: 400px;
-                object-fit: cover;
-                /* Maintain aspect ratio */
+                height: auto;
+                object-fit: fill;
+                max-height: 300px;
+
             }
 
             .gallery_title {
@@ -98,20 +101,22 @@
 
             .Ayanoh1 {
                 margin: 15px;
-                font-size: 3em;
+                font-size: 1em;
             }
         }
 
         @media only screen and (min-width: 768px) {
             .slider {
-                width: 80%
+                width: 70%
             }
 
             .slick-slide img {
                 width: 100%;
-                height: 800px;
-                object-fit: cover;
-                /* Maintain aspect ratio */
+                height: auto;
+                object-fit: fill;
+                max-height: 600px;
+
+
             }
 
             .gallery_title {
@@ -124,10 +129,10 @@
             }
         }
     </style>
+    </style>
 </head>
 
 <body>
-    <!-- Navigation Menu -->
     <header>
         <div class="menu_3">
             <a class="menu_3a" href="index.html">Home</a>
@@ -141,12 +146,12 @@
         </div>
     </header>
 
-    <!-- First Slider Section -->
+
     <h1 class="gallery_title">Class Leaders</h1>
     <section class="center slider intro-slider">
         <div><img src="images/img-slider/Ryuuen1.jpg" alt="Ryuuen Kakeru" title="classD_leader"></div>
-        <div><img src="images/img-slider/RyuuenandIchinose.jpg" alt="kep2" title="kepcim2"></div>
-        <div><img src="images/img-slider/RyuuenandSakayanagi.jpg" alt="kep3" title="kepcim3"></div>
+        <div><img src="images/img-slider/Ichinose3.jpg" alt="kep2" title="kepcim2"></div>
+        <div><img src="images/img-slider/Horikita2.jpg" alt="kep3" title="kepcim3"></div>
         <div><img src="images/img-slider/Ichinose1.jpg" alt="kep4" title="kepcim4"></div>
         <div><img src="images/img-slider/Ichinose2.jpg" alt="kep5" title="kepcim5"></div>
         <div><img src="images/img-slider/Sakayanagi1.jpg" alt="kep6" title="kepcim6"></div>
@@ -172,11 +177,9 @@
         <source src="images/overall/Season 1's Crazy Twist Ending ｜ Classroom of the Elite.mp4">
     </video>
 
-    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="galeria_kod/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
-    <!-- JavaScript for Sliders -->
     <script type="text/javascript">
         $(document).ready(function () {
             $(".intro-slider").slick({

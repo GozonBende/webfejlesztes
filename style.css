@@ -7,7 +7,7 @@
 }
 
 html {
-    height: 100%
+    flex-basis: 100%;
 }
 
 body {
@@ -82,6 +82,12 @@ body {
     float: left;
 
 }
+.overview_title {
+    display: flex;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 .story {
     display: flex;
@@ -89,12 +95,6 @@ body {
     float: left;
 }
 
-.overview_title {
-    display: flex;
-    font-size: 2em;
-    text-align: center;
-    padding-bottom: 20px;
-}
 
 .menu_1 {
     margin: 20px;
@@ -103,18 +103,6 @@ body {
     display: flex;
     justify-content: space-around
 }
-
-.menu_1a,
-.menu_2a,
-.menu_3a {
-    display: flex;
-    color: white;
-    justify-content: center;
-    text-decoration: none;
-    border: 2px white solid;
-    box-shadow: 3px 2px 6px;
-}
-
 .menu_1a {
     display: flex;
     padding: 2%;
@@ -125,38 +113,6 @@ a:hover {
     color: black;
     background-color: #f4f0ec;
 }
-
-.menu_2 {
-    margin: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu_3 {
-    margin: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-}
-
-.menu_2a {
-    font-size: 10px;
-    padding: 1%;
-    display: flex;
-    flex-basis: 10%;
-    border-radius: 50px;
-}
-
-.menu_3a {
-    font-size: 10px;
-    padding: 1%;
-    display: flex;
-    width: 12%;
-}
-
 .container {
     flex-basis: 100%;
     height: 100%;
@@ -165,14 +121,12 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
-
 .gallery {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .img-box {
     width: 300px;
     height: 500px;
@@ -224,23 +178,59 @@ a:hover {
     opacity: 1;
     bottom: 25px;
 }
+.menu_2 {
+    margin: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.menu_2a {
+    font-size: 10px;
+    padding: 1%;
+    display: flex;
+    flex-basis: 10%;
+    border-radius: 50px;
+}
+
 
 .footer {
     margin-top: auto;
 }
 
-/*second page*/
+/*Első oldal vége*/
+
+.menu_3 {
+    margin: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_1a,
+.menu_2a,
+.menu_3a {
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px white solid;
+    box-shadow: 3px 2px 6px;
+}
+
+.menu_3a {
+    font-size: 10px;
+    padding: 1%;
+    display: flex;
+    flex-basis: 12%;
+}
 
 .overall_article,
 .page3_container {
     display: flex;
     align-content: center;
 }
-
-.page3_container {
-    flex-direction: column;
-}
-
 .overall_article1,
 .overall_article2,
 .page3_individual-boxes,
@@ -250,17 +240,11 @@ a:hover {
     justify-content: center;
     align-content: center;
     margin: 20px auto;
-    width: 90%;
+    flex-basis: 90%;
     max-width: 1200px;
     align-items: flex-start;
     flex-direction: column;
 }
-
-
-.carousel-button {
-    flex-wrap: wrap;
-}
-
 
 .text-section,
 .text-section2,
@@ -273,24 +257,6 @@ a:hover {
     border-radius: 10px;
     text-align: justify;
 }
-
-.page5_text {
-    color: white;
-    padding: 20px;
-    margin: 0 auto;
-    background-color: #2a2a2a;
-    border-radius: 10px;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: justify;
-    background-color: #2a2a2a;
-    color: white;
-}
-
-
-
 .Hiyori,
 .Ayanokouji,
 .page3_pic1,
@@ -301,8 +267,6 @@ a:hover {
     justify-content: center;
 }
 
-
-
 .Hiyori,
 .Ayanokouji,
 .page3_pic1,
@@ -312,18 +276,16 @@ img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-
 }
-
 
 .page3_pic1,
 .Ayanokouji {
     order: 1;
 }
 
-
 .form1,
-.form2 {
+.form2,
+#result-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,12 +308,9 @@ img {
 
 .form1 {
     background-image: url('images/form1.jpg');
+    margin-bottom: 50px;
 }
 
-.form2 {
-    background-image: url('images/form2.png');
-    margin-bottom: 20px;
-}
 
 table {
     width: 80%;
@@ -359,13 +318,6 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
 }
-
-td,
-th {
-    padding: 10px;
-    text-align: left;
-}
-
 caption {
     text-align: center;
     color: white;
@@ -373,42 +325,37 @@ caption {
     margin-bottom: 10px;
 }
 
+td,
+th {
+    padding: 10px;
+    text-align: left;
+}
 .option {
     display: flex;
     flex-direction: column;
-    /* Alapértelmezett egymás alatti opciók */
 }
 
 .option2 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .button-container {
     display: flex;
     justify-content: center;
-    /* Gombok középre igazítása */
     gap: 20px;
-    /* Távolság a gombok között */
 }
 
 .button-container button {
     width: auto;
-    /* A gomb szélessége igazodik a tartalomhoz */
     padding: 10px 20px;
-    /* Kényelmes méretű gomb */
     font-size: 16px;
-    /* Szöveg mérete */
     border-radius: 5px;
-    /* Lekerekített sarkok */
     border: none;
-    /* Szegély eltávolítása */
     cursor: pointer;
-    /* Mutató megjelenítése */
     background-color: black;
-    /* Gomb színe */
     color: white;
-    /* Szöveg színe */
     transition: background-color 0.3s ease;
     border: 2px white solid;
     box-shadow: 3px 2px 6px;
@@ -418,39 +365,42 @@ caption {
 .button-container button:hover {
     color: black;
     background-color: #f4f0ec;
-    /* Hover állapot színe */
 }
-
-
-
-.video {
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 30px;
-    border: 2px white solid;
-}
-
-
-
-/*Third Page*/
+/* Második oldal vége*/
 
 .page3_h1 {
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-/*fifth Page*/
+.page3_container {
+    flex-direction: column;
+}
+/* Harmadik oldal vége*/
 
 .page5_title {
     display: flex;
     align-items: stretch;
     margin-bottom: 50px;
 }
+span.points {
+    font-size: 16px;
+}
 
-
+.page5_text {
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    flex-basis: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    background-color: #2a2a2a;
+    color: white;
+}
 .page5_h2_1 {
     font-size: 20px;
     padding-top: 25px;
@@ -459,17 +409,6 @@ caption {
     color: white;
     border: solid white 2px;
     float: left;
-}
-
-span.points {
-    font-size: 16px;
-}
-
-.page5_img1 {
-    display: flex;
-    width: 50%;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 .page5_h2_2 {
@@ -483,7 +422,12 @@ span.points {
     float: right;
 
 }
-
+.page5_img1 {
+    display: flex;
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 .gallery-container {
     width: 100%;
     display: flex;
@@ -496,11 +440,8 @@ span.points {
 .carousel {
     position: relative;
     width: 100%;
-    /* Adjust slider width to fit taller images */
     height: 700px;
-    /* Adjust height to accommodate taller images */
     perspective: 1000px;
-    /* 3D perspective */
     overflow: hidden;
     margin: 0;
     padding-bottom: 2px;
@@ -519,14 +460,11 @@ span.points {
 .carousel-slide {
     position: absolute;
     width: 500px;
-    /* Fixed width to maintain proportionality with tall images */
     height: 100%;
-    /* Ensure the image fills most of the container height */
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    /* Hidden by default */
     transform-origin: center center;
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
     z-index: 1;
@@ -534,24 +472,19 @@ span.points {
 
 .carousel-slide img {
     width: 55%;
-    /* Allow width to scale naturally */
     height: 60%;
-    /* Ensure the image fills the container height */
     object-fit: cover;
-    /* Preserve aspect ratio for taller images */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Active slide */
 .carousel-slide.active {
     transform: translateZ(200px);
-    /* Bring to front */
     z-index: 3;
     opacity: 1;
 }
 
-/* Left and right slides */
+/* Bal és jobb oldali gombok */
 .carousel-slide.left {
     transform: translateX(-150px) translateZ(100px) rotateY(10deg);
     z-index: 2;
@@ -564,7 +497,7 @@ span.points {
     opacity: 0.8;
 }
 
-/* Second left and right slides */
+/* Második bal és jobb gomb */
 .carousel-slide.second-left {
     transform: translateX(-300px) translateZ(0px) rotateY(20deg);
     z-index: 1;
@@ -577,16 +510,12 @@ span.points {
     opacity: 0.5;
 }
 
-/* Buttons */
 .carousel-buttons {
     display: flex;
     justify-content: center;
-    /* Center buttons below the slider */
     align-items: center;
     margin-top: 5px;
-    /* Add spacing between the images and buttons */
     gap: 8px;
-    /* Space between buttons */
 }
 
 .prev-button,
@@ -604,12 +533,77 @@ span.points {
 .carousel-button:hover {
     color: black;
     background-color: #f4f0ec
-        /* Slightly lighter background on hover */
+}
+/*Ötödik oldal vége*/
+
+.form2 {
+    background-image: url('images/form2.png');
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
+#result-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    color: white;
+    text-align: center;
+}
+
+#result-container.visible {
+    display: flex;
+    border: 2px solid white;
+    box-shadow: 3px 2px 6px rgba(255, 255, 255, 0.5);
+
+}
+
+#result-container .result-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#result-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#result-container img {
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+#result-container ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.video {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
+    border: 2px white solid;
+}
 
 @media (min-width: 600px) {
-
     .basics,
     .story {
         display: flex;
@@ -676,7 +670,11 @@ span.points {
     .option {
         flex-direction: column;
         gap: 10px;
-        /* Opciók közötti távolság */
+    }
+
+    .option2 {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .page5_img1 {
@@ -692,7 +690,6 @@ span.points {
         font-size: 10px;
         padding-top: 10px;
     }
-
     span.points {
         font-size: 20px;
     }
@@ -706,7 +703,7 @@ span.points {
     .carousel-slide {
         position: absolute;
         width: 500px;
-        height: 100%;
+        height: 120%;
     }
 
     .carousel-slide img {
@@ -715,7 +712,6 @@ span.points {
         object-fit: cover;
     }
 
-    /* Buttons */
     .carousel-buttons {
         margin-top: 8px;
     }
@@ -766,6 +762,10 @@ span.points {
         order: 2;
     }
 
+    .page5_text {
+        width: 95%;
+    }
+
     .page3_pic1,
     .Hiyori {
         order: 3;
@@ -780,19 +780,31 @@ span.points {
     .form2 {
         flex-direction: row;
         max-width: 1200px;
-        /* Nagyobb kijelzőkön szélesebb táblázatok */
     }
 
     .option {
         display: flex;
         flex-direction: row;
-        /* Alapértelmezett egymás alatti opciók */
-        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
     }
 
+    .option2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #result-container {
+        display: flex;
+        color: white;
+        justify-content: center;
+        flex-basis: 50%;
+    }
 
     .page5_img1 {
-        width: 50%;
+        flex-basis: 50%;
     }
 
     .page5_h2_1 {
@@ -813,14 +825,12 @@ span.points {
         font-size: 14px;
         padding: 8px 12px;
 
-
     }
 
     .carousel {
         width: 100%;
         height: 600px;
     }
-
 
     .carousel-slide {
         position: absolute;
@@ -834,7 +844,6 @@ span.points {
         object-fit: cover;
     }
 
-    /* Buttons */
     .carousel-buttons {
         margin-top: 15px;
         gap: 15px;

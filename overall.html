@@ -4,13 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gózon Bendegúz">
+    <meta name="copyright" content="Oktatási célokra">
+    <meta name="description" content="Classroom of the Elite Light Novel series">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="images/Icon.jpg" type="image/x-icon">
     <title>Classroom of the Elite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    <script src='jquery/jquery-3.7.1.min.js'></script>
+    <script src='jquery/dist/jquery.validate.min.js'></script>
+    <script>
+        $(document).ready(function () {
+            $(".form1").validate({
+                rules: {
+                    name: "required",
+                    read: "required",
+                    birthday: "required",
+                    expectations: {
+                        required: true,
+                        minlength: 10
+                    },
+                },
+                messages: {
+                    name: "Please give us your name!",
+                    read: "Please choose from the following options!",
+                    birthday: "Please provide your birthday!",
+                    expectations: {
+                        required: "Please write a brief summary!",
+                        minlength: "It must be at least 10 characters long!"
+                    },
+                },
+                errorPlacement: function (error, element) {
+                    if (element.attr("name") === "read") {
+                        error.insertAfter(".option div:last-child");
+                    } else {
+                        error.insertAfter(element);
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <style>
+        label.error {
+            color: gold;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,11 +77,28 @@
                     <div class="text-section">
                         <h1 class="overview_title">About the Series</h1>
                         <p>
-                            Classroom of the Elite, written by Shōgo Kinugasa and illustrated by Shunsaku Tomose, is a critically acclaimed Japanese light novel series published under MF Bunko J. The first volume was released on May 25, 2015, captivating readers with its intricate exploration of social dynamics and meritocracy. The story is set in the prestigious Tokyo Metropolitan Advanced Nurturing High School, where students are ranked and rewarded based on their skills, intelligence, and ability to outwit their peers. Its themes of psychological intrigue, competition, and character-driven narratives have made it a standout in the light novel genre.
+                            Classroom of the Elite, written by Shōgo Kinugasa and illustrated by Shunsaku Tomose, is a
+                            critically acclaimed Japanese light novel series published under MF Bunko J. The first
+                            volume was released on May 25, 2015, captivating readers with its intricate exploration of
+                            social dynamics and meritocracy. The story is set in the prestigious Tokyo Metropolitan
+                            Advanced Nurturing High School, where students are ranked and rewarded based on their
+                            skills, intelligence, and ability to outwit their peers. Its themes of psychological
+                            intrigue, competition, and character-driven narratives have made it a standout in the light
+                            novel genre.
 
-                            The series has achieved remarkable success, selling over 6 million copies worldwide as of 2023, and it continues to gain popularity among fans of complex and thought-provoking storytelling. Its critical acclaim and growing fanbase led to an anime adaptation produced by Studio Lerche, which aired its first season in July 2017. Known for its sharp visuals, strategic plotlines, and compelling character arcs, the anime adaptation expanded the series' reach to a global audience.
-                            
-                            The anime's success spurred the release of a second and third season in subsequent years, further cementing the franchise's legacy. Fans praise the story's ability to balance cerebral challenges with emotional depth, alongside its enigmatic protagonist, Kiyotaka Ayanokōji, who adds layers of mystery and intrigue. With its unique blend of intellectual strategy, social commentary, and gripping drama, Classroom of the Elite has solidified its place as one of the most celebrated light novels of the decade.
+                            The series has achieved remarkable success, selling over 6 million copies worldwide as of
+                            2023, and it continues to gain popularity among fans of complex and thought-provoking
+                            storytelling. Its critical acclaim and growing fanbase led to an anime adaptation produced
+                            by Studio Lerche, which aired its first season in July 2017. Known for its sharp visuals,
+                            strategic plotlines, and compelling character arcs, the anime adaptation expanded the
+                            series' reach to a global audience.
+
+                            The anime's success spurred the release of a second and third season in subsequent years,
+                            further cementing the franchise's legacy. Fans praise the story's ability to balance
+                            cerebral challenges with emotional depth, alongside its enigmatic protagonist, Kiyotaka
+                            Ayanokōji, who adds layers of mystery and intrigue. With its unique blend of intellectual
+                            strategy, social commentary, and gripping drama, Classroom of the Elite has solidified its
+                            place as one of the most celebrated light novels of the decade.
                         </p>
                     </div>
                     <div class="Hiyori">
@@ -51,17 +112,29 @@
                     <div class="text-section2">
                         <h1 class="overview_title">About the Story</h1>
                         <p>
-                            Classroom of the Elite takes place at the Tokyo Metropolitan Advanced Nurturing High School, an elite institution designed to cultivate Japan's future leaders. Students are provided with luxurious accommodations, financial freedom through a monthly point system, and complete autonomy over their daily lives. However, the school’s utopian facade masks a harsh reality: students are ranked by their academic and social performance, with privileges tied directly to their success. The story revolves around Kiyotaka Ayanokōji, a quiet and enigmatic student of Class 1-D, the lowest-ranked class in the school.
-                            Despite his unassuming demeanor, Kiyotaka possesses exceptional intelligence and manipulative skills, which he uses subtly to navigate the school’s complex and competitive environment. As Class 1-D struggles to rise in the rankings, Kiyotaka forms alliances with classmates like the ambitious Suzune Horikita and the cheerful yet cunning Kikyo Kushida, each harboring their own motives and secrets.
-                            The narrative unfolds through intense psychological battles, strategic mind games, and social manipulation as Class 1-D faces challenges that test their teamwork, resilience, and intellect. Themes of meritocracy, societal expectations, and human nature are woven into the story as characters grapple with their ambitions, insecurities, and morality. With its layered storytelling, unpredictable twists, and exploration of interpersonal dynamics, Classroom of the Elite keeps readers and viewers hooked until the very end.
-                            
-                            
+                            Classroom of the Elite takes place at the Tokyo Metropolitan Advanced Nurturing High School,
+                            an elite institution designed to cultivate Japan's future leaders. Students are provided
+                            with luxurious accommodations, financial freedom through a monthly point system, and
+                            complete autonomy over their daily lives. However, the school’s utopian facade masks a harsh
+                            reality: students are ranked by their academic and social performance, with privileges tied
+                            directly to their success. The story revolves around Kiyotaka Ayanokōji, a quiet and
+                            enigmatic student of Class 1-D, the lowest-ranked class in the school.
+                            Despite his unassuming demeanor, Kiyotaka possesses exceptional intelligence and
+                            manipulative skills, which he uses subtly to navigate the school’s complex and competitive
+                            environment. As Class 1-D struggles to rise in the rankings, Kiyotaka forms alliances with
+                            classmates like the ambitious Suzune Horikita and the cheerful yet cunning Kikyo Kushida,
+                            each harboring their own motives and secrets.
+                            The narrative unfolds through intense psychological battles, strategic mind games, and
+                            social manipulation as Class 1-D faces challenges that test their teamwork, resilience, and
+                            intellect. Themes of meritocracy, societal expectations, and human nature are woven into the
+                            story as characters grapple with their ambitions, insecurities, and morality. With its
+                            layered storytelling, unpredictable twists, and exploration of interpersonal dynamics,
+                            Classroom of the Elite keeps readers and viewers hooked until the very end.
                     </div>
                 </div>
                 <div class="overall_article1">
                     <div class="text-section">
                         <h1 class="overview_title">Kiyotaka Ayanokouji</h1>
-
                         The Main Character of the show. He is a 16 years old teenager boy, whose attending to the Tokyo
                         Metropolitan Advanced Nurturing Highschool. At first glance he is just a tottaly avreage boy,
                         his grades are not good but not bad either, his pyshical appearance is not outstanding, he is
@@ -87,9 +160,18 @@
     </div>
 
     <div class="form">
-        <form method="post" action="https://rf.unicorvinus.hu/webfejlesztes/receive.php" class="form1">
-            <table>
+        <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" class="form1">
+            <table id="form">
                 <caption>Basics</caption>
+                <tr>
+                    <td>
+                        <div class="option">
+                            <label>Name:
+                                <input type="text" name="name" size="50">&nbsp;&nbsp;
+                            </label>
+                        </div>
+                    </td>
+                </tr>
                 <tr>
                     <td colspan="2">
                         <label>Have you ever read any Light Novels before?</label>
@@ -97,20 +179,19 @@
                         <br>
                         <div class="option">
                             <div>
-                                <input type="radio" id="option1" name="high-score"
-                                    value="No and Im not intended to read ">
+                                <input type="radio" id="option1" name="read" value="No and Im not intended to read ">
                                 <label for="option1">No , never</label>
                             </div>
                             <div>
-                                <input type="radio" id="option2" name="high-score" value="No, but Im interested">
+                                <input type="radio" id="option2" name="read" value="No, but Im interested">
                                 <label for="option2">No, but Im interested</label>
                             </div>
                             <div>
-                                <input type="radio" id="option3" name="high-score" value="Yes, a few ">
+                                <input type="radio" id="option3" name="read" value="Yes, a few ">
                                 <label for="option3">Yes, a few</label>
                             </div>
                             <div>
-                                <input type="radio" id="option4" name="high-score" value="Yes, often">
+                                <input type="radio" id="option4" name="read" value="Yes, often">
                                 <label for="option4">Yes, often</label>
                             </div>
                         </div>
@@ -130,60 +211,14 @@
                         <textarea id="expectations" name="expectations" rows="5" cols=""></textarea>
                     </td>
                 </tr>
-            </table>
-        </form>
-        <br>
-        <form method="post" action="https://rf.unicorvinus.hu/webfejlesztes/receive.php" class="form2">
-            <br>
-            <table>
-                <caption>Which Class would you be assigned to</caption>
                 <tr>
                     <td colspan="2">
-                        <label>Please rate your abilities from 1 to 100:</label>
-                        <br>
-                        <br>
                         <div class="option">
-                            <div><label for="ability1">Academic Ability</label>
-                                <input type="number" min="0" max="100" step="5">
-                            </div>
-                            <div><label for="ability2">Physical Ability</label>
-                                <input type="number" min="0" max="100" step="5">
-                            </div>
-                            <div><label for="ability3">Social Contribution</label>
-                                <input type="number" min="0" max="100" step="5">
-                            </div>
-                            <div><label for="ability4">Cooperation Ability</label>
-                                <input type="number" min="0" max="100" step="5">
-                            </div>
-                            <div><label for="ability4">Adaptability</label>
-                                <input type="number" min="0" max="100" step="5">
-                            </div>
+                            <label for="mennyiretetszett">How would you rate Classroom of the Elite based on your first
+                                impression?</label>
+                            <div>1&nbsp;<input type="range" name="first_impression" min="1" max="10" step="1" value="5"
+                                    id="mennyiretetszett">&nbsp;10</div>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="beneficial-system">What is the most beneficial system in the school?</label>
-                        <br>
-                        <br>
-                        <select id="beneficial-system" name="beneficial-system">
-                            <option value="system1">Complete Democracy</option>
-                            <option value="system2">Democracy under the elected Leaders</option>
-                            <option value="system3">Strong and Unquestionable Leadership</option>
-                            <option value="system3">Dicatorship under one talented Leader</option>
-                        </select>
-                    </td>
-                    <td>
-                        <label for="decision">What would you choose in a dire situation?</label>
-                        <br>
-                        <input type="checkbox" name="targy1" value="ON">
-                        <label for="myself">Myself</label><br>
-                        <input type="checkbox" name="targy1" value="ON">
-                        <label for="class">Class</label><br>
-                        <input type="checkbox" name="targy1" value="ON">
-                        <label for="friends">Friends</label><br>
-                        <input type="checkbox" name="targy1" value="ON">
-                        <label for="money">Money</label>
                     </td>
                 </tr>
                 <tr class="option1">
@@ -196,7 +231,7 @@
                 </tr>
             </table>
         </form>
-    </div>
+
 </body>
 
 </html>

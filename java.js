@@ -7,7 +7,7 @@ document.querySelectorAll('.gallery-container').forEach((container) => {
     function updateSlides() {
         slides.forEach((slide, index) => {
             slide.classList.remove('active', 'left', 'right', 'second-left', 'second-right');
-            slide.style.opacity = '0'; // Reset opacity
+            slide.style.opacity = '0';
 
             if (index === currentIndex) {
                 slide.classList.add('active');
@@ -38,5 +38,5 @@ document.querySelectorAll('.gallery-container').forEach((container) => {
         updateSlides();
     });
 
-    updateSlides(); // Initialize the slider
+    updateSlides();
 });
