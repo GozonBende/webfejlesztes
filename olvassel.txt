@@ -6,9 +6,9 @@ Téma: A Classroom of the Elite japán Light Novelről készíttem az oldalt. A 
 
 JS kód: Az oldal 5. és 6. oldalán található. A kép slidert valósítottam meg javas scriptel, mivel nem tudtam hasonló hatást elérni a Jqueryvel. A Js kód sorba rakja a képeket, teljesen reszponzív és jól passzol az oldal designához. Ezen kívül a 6. oldalon található egy kis kérdőív amihez használtam, ez kiírja hogy melyik osztályba sorolná az illetőt a megadott pontok alapján, illetve kiírja a válaszait is.
 
-A betűtípust mindegyik oldalon használtam mint alap betűtípus, mivel illet a téma stílusához
+A betűtípust mindegyik oldalon használtam mint alap betűtípus, mivel illet a téma stílusához A neve: Source Code Pro
  
 Források:
-A Chat Gpti használata illetve Youtube videók segítettek az oldal elkészítésében. A neve: Source Code Pro
+A Chat Gpti használata illetve Youtube videók segítettek az oldal elkészítésében.
 Yt videó linkje: https://youtu.be/ly4Dqz2Mz8s?si=HMjdcwckenSywMmd
 Az első oldalon található, 4 képre és a mechanizmusukra használtam a videót.
